@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    display: grid;
+        grid-template-columns: 15% 4fr 15%;
+        grid-gap: 10px;
+        grid-template-rows: 20% 5fr 10%;
+        font-family: 'Gill Sans', sans-serif;
+}
+
+.header {
+    dislay: grid;
+    
+  }
+
+.midsection {
+    display: grid;
+    grid-area: 1 / 4;
+}
+
+
+
+footer {
+    background: #9e5511
+}
