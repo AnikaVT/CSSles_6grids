@@ -10,35 +10,104 @@ body {
     display: grid;
         grid-template-columns: repeat(5, 320px);
         grid-template-rows: repeat(12, 80px);
-        font-family: 'Gill Sans', sans-serif;
+        font-family: sans-serif;
 }
 
     .header {
         display: grid;
         grid-area: 1 / span 6;
-        
-    }
+        background: #229e11;
+        color: white;
+        }
+
+        .headertitle {
+            grid-area: 1 / 1;
+            font-size: 2em;
+            padding: 0.8em;
+            font-weight: bold;
+            justify-items: start;
+        }
+
+        .navlist {
+            display: grid;
+            grid-area: 1 / 5;
+            grid-column: 4;
+            font-size: 1em;
+            color: white;
+            justify-items: start;
+            align-items: stretch;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    
+        a:hover {
+            text-decoration: underline;
+        }
 
     .sidebar-left {
         display: grid;
         grid-column: 1 / 2;
         grid-row: 2 / 13;
+        background: #f5c365;
+        justify-items: center;
+        align-content: start;
         }
+
+        .Cats-on-the-left {
+            padding: 1em 0em 0em 0em;
+            font-size: 1.5em;
+            font-weight: bold;
+        }   
             
     .maintext {
         display: grid;
         grid-column: 2 / 5;
-        grid-row: 2 / 11;        
-           }
+        grid-row: 2 / 11;
+        padding: 1.5em;
+        justify-items: center;
+        align-content: start;
+        background: white;     
+        }
+
+        .maintext-title {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
 
     .sidebar-right {
         display: grid;  
         grid-column: 5 / 6;
-        grid-row: 2 / 11;     
-            }
+        grid-row: 2 / 12;     
+        background: #f5c365;
+        justify-items: center;
+        align-content: start;
+        }
+
+        .Cats-on-the-right {
+            padding: 1em 0em 0em 0em;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+    img {
+        max-width: 100%;
+        }
+
+        .kitty {
+            padding: 1em;
+        }
 
     .footer {
         display: grid;
         grid-area: 12 / span 5;
-        background: #9e5511
+        color: white;
+        background: #9e5511;
+        justify-items: center;
+        align-content: center;
     }
