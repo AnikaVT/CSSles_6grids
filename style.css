@@ -3,7 +3,7 @@
   }
 
 html {
-    height: 100%;
+    width: 100%;
 }
 
 body {
@@ -31,23 +31,26 @@ body {
         .navlist {
             display: grid;
             grid-area: 1 / 5;
+            padding: 1em;
             grid-column: 4;
             font-size: 1em;
-            color: white;
-            justify-items: start;
+            justify-items: end;
             align-items: stretch;
         }
 
         ul {
             list-style-type: none;
+            columns: 5;
         }
 
         a {
             text-decoration: none;
+            color: white;
         }
     
         a:hover {
             text-decoration: underline;
+            color: yellow;
         }
 
     .sidebar-left {
